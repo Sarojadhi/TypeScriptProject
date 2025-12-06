@@ -8,9 +8,26 @@
 <body>
   <h1>TypeScript Demo</h1>
 
+  <label>First Name: </label>
+  <input id="first" type="text" placeholder="Enter Your Name" />
+  <br /><br />
+
+  <label>Last Name: </label>
+  <input id="last" type="text" placeholder="Enter Your Last Name" />
+  <br /><br />
+
+  <label>Age: </label>
+  <input id="age" type="text" placeholder="Enter Your Age" />
+  <br /><br />
+
+  <button id="btn" type="button">Submit</button>
+
   <script type="module">
-    import { greeting } from "./DataType/DataType.js";
-    console.log("Imported greeting:", greeting);
-  </script>
+  import { call } from "./DataType/index.js";
+
+ const btn = document.getElementById("btn");
+  btn?.addEventListener("click", call);
+</script>
+
 </body>
 </html>
