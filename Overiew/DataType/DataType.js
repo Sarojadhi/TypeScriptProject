@@ -1,36 +1,42 @@
-// Primitive type
-// string to text
-var name1 = "saroj";
-// number integer float
-var number = 13;
-var Floatnum = 130.3;
-// boolean in ts 
-var isboy = true;
-// Null 
-var nulls = null;
-// Undifine 
-var Undifine = undefined;
-// BigInt num 
-var big = 89439254903254n;
-// Symbol 
-var Sym = Symbol("id");
-// OBJECT TYPE 
-var obj = { name: "saroj", age: 23 };
-// Array Type 
-var num = [1, 2, 3, 4, 5];
-// Tuple (Fixed type & order)
-var userinfo = ["saroj", 22];
-// enum 
+// Primitive types
+let name1 = "saroj";
+let number = 13;
+let Floatnum = 130.3;
+let isboy = true;
+let nulls = null;
+let Undifine = undefined;
+// BigInt & Symbol
+let big = 89439254903254n;
+let sym = Symbol("id");
+// Object & Array
+let obj = { name: "saroj", age: 23 };
+let num = [1, 2, 3, 4, 5];
+// Tuple
+let userinfo = ["saroj", 22];
+// Enum
 var Roles;
 (function (Roles) {
     Roles[Roles["Roles"] = 0] = "Roles";
     Roles[Roles["User"] = 1] = "User";
 })(Roles || (Roles = {}));
-var r = Roles.User;
-console.log(r);
-// Special Types
-// any → accepts anything
+let r = Roles.User;
+// Any
 var dat = "saroj";
 dat = 10;
-console.log(name1, number, Floatnum, isboy, nulls, Undifine, big, Sym, obj, num, userinfo, r);
-console.log(dat);
+// Function type
+let add = (a, b) => a + b;
+// Union & Intersection
+let a;
+a = 40;
+a = "saroj";
+let info = { names: "sudip", age: 22 };
+// Literal
+let direction = "left";
+let directions = "right";
+// Export for ES Module
+export const greeting = "Hello TypeScript";
+// Console logs
+console.log("TS module loaded", greeting, big, sym);
+console.log(name1, number, Floatnum, isboy, nulls, Undifine, big, sym, obj, num, userinfo, r, add, a);
+console.log(dat, info, direction, directions);
+//# sourceMappingURL=DataType.js.map
