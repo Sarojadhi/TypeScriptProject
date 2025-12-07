@@ -1,9 +1,11 @@
-export const call = () => {
-    const firstInput = document.getElementById("first");
-    const lastInput = document.getElementById("last");
-    const ageInput = document.getElementById("age");
-    console.log("First Name:", firstInput?.value);
-    console.log("Last Name:", lastInput?.value);
-    console.log("Age:", ageInput?.value);
+const btn = () => {
+    const fname = document.getElementById("first");
+    console.log(fname.value);
+    const lname = document.getElementById("last");
+    console.log(lname.value);
+    const age = document.getElementById("age");
+    console.log(fname.value, lname.value, "is", age.value, "years old ");
 };
+document.getElementById("btn")?.addEventListener("click", btn);
+export {};
 //# sourceMappingURL=index.js.map

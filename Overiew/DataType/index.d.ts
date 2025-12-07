@@ -1,2 +1,2 @@
-export declare const call: () => void;
+export {};
 //# sourceMappingURL=index.d.ts.map
